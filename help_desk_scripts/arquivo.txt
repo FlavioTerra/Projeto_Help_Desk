@@ -1,0 +1,4 @@
+4#chamado jose#Software#bla bla bla
+1#chamado adm#Hardware#teste teste teste
+4#chamado jose 2#Hardware#bla bla bla
+3#chamado maria #Impressora#bla bla bla

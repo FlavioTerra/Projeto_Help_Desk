@@ -1,0 +1,300 @@
+
+/*
+    ________ Resets - Default ________
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+input:focus,
+button:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+/*
+    ________ Variables ________
+*/
+
+:root {
+    --branco: #fff;
+    --cinza_1: #e0e0e0;
+    --cinza_2: #b8b8b8;
+    --cinza_3: #a1a1a1;
+    --cinza_4: #4b4b4b;
+    --roxo_1: #b721ff;
+    --roxo_2: #8a00ca;
+    --azul: #21d4fd;
+}
+
+/*
+    ________ Header ________
+*/
+
+header {
+    background: var(--roxo_2);
+    padding: 13px 0;
+}
+
+header div#cabecalho {
+    display: flex;
+    align-items: center;
+}
+
+header div#cabecalho h1 {
+    margin-left: 20px;
+    font-size: 1.3em;
+} 
+
+header div#cabecalho a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: var(--branco);
+}
+/*
+    ________ Header ________
+    ________ Nav ________
+*/
+
+nav {
+    margin-left: auto;
+}
+
+nav ul a {
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/*
+    ________ Form - Login________
+*/
+
+form#form-login {
+    display: flex;
+    justify-content: center;
+}
+
+form#form-login img {
+    position: absolute;
+    margin-top: 60px;
+}
+
+form #login{
+    width: 32%;
+    min-width: 300px;
+    margin-top: 120px;
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--branco);
+    box-shadow: 0px 0px 3px var(--cinza_3);
+}
+
+form #login input {
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-bottom: solid var(--cinza_2) 2px;
+    margin: 5px 0;
+    padding-left: 30px;
+    color: var(--cinza_4);
+}
+
+form #login button {
+    width: 80%;
+    height: 40px;
+    font-weight: bold;
+    color: var(--branco);
+    background: linear-gradient(to right, var(--azul), var(--roxo_1));
+    border-radius: 25px;
+    border: none;
+    margin-top: 15px;
+}
+
+form #login button:hover {
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+form #login input#email {
+    background: url(../img/icone-usuario.png) no-repeat;
+    background-size: 13px;
+    background-position-y: center;
+}
+
+form #login input#senha {
+    background: url(../img/icone-cadeado.png) no-repeat;
+    background-size: 13px;
+    background-position-y: center;
+}   
+
+/*
+    ________ main ________
+*/
+
+header.header-contents {
+    background: var(--cinza_1);
+    padding: 15px 0px 15px 20px;
+}
+
+header.header-contents h2 {
+    color: var(--roxo_1);
+    font-size: 1.2em;
+}
+
+main.main-contents {
+    margin: 0 auto;
+    width: 90%;
+    min-width: 300px;
+}
+
+main.main-contents .background-contents .forms-2{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+main .background-contents {
+    background: var(--branco);
+    box-shadow: 0px 0px 3px var(--cinza_3);
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+/*
+    ________ open called ________
+*/
+
+main .background-contents form .forms{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   width: 95%;
+   padding: 20px 0;
+}
+
+main .background-contents form .forms input,
+main .background-contents form .forms select,
+main .background-contents form .forms textarea {
+    margin-top: 8px;
+    margin-bottom: 25px;
+    height: 35px;
+    padding: 5px 0px 5px 15px;
+    color: var(--cinza_4);
+    border-radius: 5px;
+    border: var(--cinza_2) solid 1px;
+}
+
+main .background-contents form .forms textarea {
+    height: 7em;
+}
+
+main .background-contents form .forms input:focus,
+main .background-contents form .forms select:focus,
+main .background-contents form .forms textarea:focus {
+    box-shadow: 0px 0px 6px var(--azul);
+    transition: 0.2s ease;
+    outline: 0;
+}
+
+main.main-contents .background-contents form .forms-2 button,
+main.main-contents .background-contents form .forms-2 a,
+main.main-contents .background-contents .return a
+{
+    width: 35%;
+    height: 40px;
+    border: none;
+    background: var(--roxo_1);
+    border-radius: 25px;
+    color: var(--branco);
+    font-weight: bold;
+}
+
+main.main-contents .background-contents form .forms-2 a,
+main.main-contents .background-contents .return a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+main.main-contents .background-contents form .forms-2 button:hover,
+main.main-contents .background-contents form .forms-2 a:hover,
+main.main-contents .background-contents .return a:hover {
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+main.main-contents .background-contents form .forms-2 {
+   padding-top: 0;
+}
+
+/*
+    ________ Consult ________
+*/
+
+main.main-contents .background-contents .return {
+    padding: 20px 0;
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 7.5%;
+}
+
+main .card {
+    background: var(--azul);
+    border: 1px solid var(--cinza_3);
+    margin: 20px 20px 10px 20px;
+    border-radius: 5px;
+}
+
+main .card h3,
+main .card h4,
+main .card p {
+    padding: 8px 12px 8px 12px;
+}
+
+main .card h3 {
+    color: var(--roxo_2);
+    font-size: 1.3em;
+}
+
+main .card h4 {
+    color: var(--cinza_4);
+}
+
+main .card p {
+    color: var(--cinza_4);
+    font-size: 0.9em;
+}
